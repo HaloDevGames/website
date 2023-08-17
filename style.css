@@ -45,3 +45,9 @@
 
 	padding: 10px 12px;
 }
+
+body {
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
