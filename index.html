@@ -3,50 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <title>HaloDev Games</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdn.halodev.games/css/temp-landing.css">
+  
   <a rel="me" href="https://mas.to/@Halo"></a>
+  <link rel="icon" href="https://cdn.halodev.games/Favicon.png" type="image/png">
+
+  <meta name="theme-color" content="#9000FF">
+  <meta name="site_name"   content="halodev.games">
+  <meta name="language"    content="en-gb">
+  <meta name="title"       content="HaloDev Games">
+  <meta name="description" content="we're moving to a new website! be back soon...">
+
+  <meta property="og:site_name"   content="halodev.games">
+  <meta property="og:title"       content="HaloDev Games">
+  <meta property="og:description" content="we're moving to a new website! be back soon...">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<head>
-   <meta charset="utf-8">
 
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<canvas class="orb-canvas"></canvas>
 
-   <meta name="theme-color" content="#9000FF">
-   <meta name="site_name"   content="halodev.games">
-   <meta name="language"    content="en-gb">
-   <meta name="title"       content="HaloDev Games">
-   <meta name="description" content="we're moving to a new website! be back soon...">
+<div class="overlay">
+  <div class="overlay__inner">
+    <h1 class="overlay__title">
+      HaloDev Games
+    </h1>
 
-   <meta property="og:site_name"   content="halodev.games">
-   <meta property="og:title"       content="HaloDev Games">
-   <meta property="og:description" content="we're moving to a new website! be back soon...">
+    <p class="overlay__description">
+      👋 Hey there!
+      We are currently waiting to be transferred to <span class="text-gradient">Squarespace Domains</span> before we move to a new website.
+      In the meantime, you can <strong>use the buttons below</strong> to access our games.
+    </p>
 
-   <link rel="icon" href="./assets/Favicon.png" type="image/png">
-   <title>back soon!</title>
-</head>
+    <div class="overlay__btns">
+      <button class="overlay__btn overlay__btn--transparent">
+        <a href="roblox://experiences/start?placeId=3976767347&launchData=hdg" target="_blank">
+          🌊 Flooded Area
+        </a>
+      </button>
 
+      <button class="overlay__btn overlay__btn--transparent">
+        <a href="roblox://experiences/start?placeId=8936217743&launchData=hdg" target="_blank">
+          🌊 Tide Rush 2
+        </a>
+      </button>
 
-<body>
-   <div class="centre">
-      <div class="box">
-         <div class="title">
-            <h2>
-               HaloDev Games
-            </h2>
-         </div>
-
-         <div class="info">
-            <p>
-               we're moving to a new website! be back soon...
-            </p>
-         </div>
-      </div>
-   </div>
-</body>
-<!-- partial -->
-  <script type="module" src="./script.js"></script>
-
+      <button class="overlay__btn overlay__btn--transparent">
+        <a href="roblox://experiences/start?placeId=5451858325&launchData=hdg" target="_blank">
+          ⚔️ Halo's Arena
+        </a>
+      </button>
+    </div>
+  </div>
+</div>
+  <script type="module" src="https://cdn.halodev.games/js/bg/orb.js"></script>
 </body>
 </html>

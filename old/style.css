@@ -1,13 +1,13 @@
 @font-face {
 	font-family: "Gotham SSm Book";
-	src: url("./assets/fonts/GothamSSm-Book.otf");
+	src: url("https://cdn.halodev.games/fonts/gotham-ssm/book.otf");
 	font-weight: normal;
 	font-size: normal;
 }
 
 @font-face {
 	font-family: "Gotham SSm Black";
-	src: url("./assets/fonts/GothamSSm-Black.otf");
+	src: url("https://cdn.halodev.games/fonts/gotham-ssm/black.otf");
 	font-weight: bold;
 	font-size: normal;
 }
