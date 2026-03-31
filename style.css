@@ -1,3 +1,14 @@
+/* background */
+
+body {
+   background-attachment: fixed;
+   background-image: url("/background.png");
+   background-position: center; 
+	background-size: cover;
+}
+
+
+
 /* font */
 
 @font-face {
@@ -25,16 +36,6 @@ h1 {
 	margin-top: 0;
 }
 
-h2 {
-    font-size: 1.25em;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 1em;
-    font-weight: bold;
-}
-
 
  
 /* text */
@@ -55,37 +56,6 @@ li::marker {
 	color: #808080;
 }
 
-time {
-	background: hsla(0, 0%, 0%, 0.075);
-	border: 1px solid hsla(0, 0%, 0%, 0.10);
-	border-radius: 4px;
-	padding: 0 0.2em;
-	position: relative;
-}
-
-time .popup {
-	background-color: #e6e6e6;
-	border: 1px solid hsla(0, 0%, 0%, 0.10);
-	border-radius: 4px;
-	bottom: 1.5em;
-	display: none;
-	margin: 0 calc(-1px - 0.2em);
-	padding: 0 0.2em;
-	position: absolute;
-	visibility: hidden;
-}
-
-time:hover .popup {
-	display: inline;
-	visibility: visible;
-	width: max-content;
-}
-
-.corner-border:has(> .button:hover), .corner-border:has(> .large-button:hover), .media-corner-border:has(> a:hover) {
-	scale: 110%;
-	filter: brightness(90%);
-}
-
 a:link:not(.button, .large-button, .footer-item), a:visited:not(.button, .large-button, .footer-item) {
 	color: hsl(197, calc(var(--saturation-factor, 1) * 100%), 47.8%);
 	text-decoration: none;
@@ -93,14 +63,6 @@ a:link:not(.button, .large-button, .footer-item), a:visited:not(.button, .large-
 
 a:hover:not(.button, .large-button, .footer-item) {
 	text-decoration: underline;
-}
-
-
-
-/* images */
-
-.circle-border {
-	border-radius: 100%;
 }
 
 
@@ -135,24 +97,6 @@ a.scroll-anchor:focus {
 	width: 75%;
 	position: relative;
 	z-index: 2;
-	
-}
-
-.box {
-	display: flow-root; /* if the display seems fucked up, this may be the line that's causing it ! */
-	padding: 1em;
-	position: relative;
-	background-color: #212121;
-	border-radius: 15px;
-	
-}
-
-hr {
-	width: 100%;
-}
-
-.empty {
-	padding: 1em;
 }
 
 
@@ -168,30 +112,17 @@ hr {
 
 /* main sections */
 
-section {
-	display: -webkit-flex;
-	display: flex;
+.box {
+	display: block;
+	padding: 1em;
+	position: relative;
+	background-color: #212121;
+	border-radius: 15px;
 }
 
-article {
-	display: flex;
-	-webkit-flex: 3;
-	-ms-flex: 3;
-	flex: 3;
-	flex-direction: column;
-	gap: 1em;
-	padding: 1em;
-}
 
 
 /* groups */
-
-.list {
-	column-gap: 0.2em;
-	display: grid;
-	grid-template-columns: repeat(1, minmax(0, 1fr));
-	row-gap: 0.2em;
-}
 
 .grid {
 	column-gap: 1em;
@@ -226,31 +157,7 @@ article {
 
 /* media */
 
-img, video {
-	width: 100%;
-}
-
-.media-corner-border:has(.thumbnail) {
-	height: auto;
-	float: right;
-	width: auto;
-}
-
-.thumbnail {
-	position: relative;
-	width: 10em;
-}
-
-a img {
-	text-decoration: none;
-}
-
-.media-corner-border:has(.youtube-video) {
-	aspect-ratio: 16 / 9;
-}
-
-.youtube-video {
-	height: 100%;
+img {
 	width: 100%;
 }
 
@@ -264,47 +171,33 @@ a img {
 	width: auto;
 }
 
-.inline-button-emoji {
-	float: none !important;
-	height: 1.25em !important;
-}
-
 
 
 /* responsive web design */
 
-.mobile {
-	display: none;
-}
-
 @media only screen and (max-width: 750px) {
-	.desktop {
-	display: none;
-	}
-
-	.mobile {
-	display: block;
-
-	}
+	.centre {
+        width: 100% !important;
+    }
 
 	ul {
-	padding-left: 1.25em;
+	    padding-left: 1.25em;
 	}
 
 	.grid {
-	grid-template-columns: repeat(1, minmax(0, 1fr));
+	    grid-template-columns: repeat(1, minmax(0, 1fr));
 	}
 
 	.thumbnail {
-	width: 5em !important
+	    width: 5em !important
 	}
 
 	.centre, article {
-	padding: 0 !important;
+	    padding: 0 !important;
 	}
 
 	section {
-	-webkit-flex-direction: column;
-	flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
 	}
 }
