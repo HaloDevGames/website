@@ -102,7 +102,7 @@ a.scroll-anchor:focus {
 /* main sections */
 
 .box {
-	display: flow-root; /* if the display seems fucked up, this may be the line that's causing it ! */
+	display: block;
 	padding: 1em;
 	position: relative;
 	background-color: #212121;
